@@ -52,7 +52,8 @@ Open `index.html` in any text editor. The code is split into clearly commented p
 - **Colors:** change the values at the top of the CSS under `:root`.
 - **Scrolling band words:** edit the `labels` list in the script, under "Scrolling text band".
 - **About stats:** the numbers use `data-count` in the About section. The "24h typical first reply" figure is a placeholder, so change it to match your real reply time.
-- **Logo:** the logo is stored inside `index.html` as a base64 image in the favicon link and in the header. To replace it, convert your new square logo to base64 and swap the text after `data:image/jpeg;base64,` in both places.
+- **Logo:** the logo is stored inside `index.html` as base64 PNG images. The browser-tab icon is a small navy square version (in the `<link rel="icon">`), and the header uses a transparent version of the logo (the white gear with `</>`, the purple gear and the brush). To replace them, convert your new logo to base64 and swap the text after `data:image/png;base64,` in both places.
+- **Color balance:** the colors come from the logo and follow a 60/30/10 split. Navy `#09123d` is the main color (about 60%), purple `#6f54c5` is the second color (about 30%), and white is the accent (about 10%). Change the values under `:root` to adjust it.
 
 ## Features
 
